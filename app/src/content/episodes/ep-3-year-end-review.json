@@ -1,0 +1,32 @@
+{
+  "id": "ep-3-year-end-review",
+  "episodeNumber": 3,
+  "title": "Our Year End Review",
+  "slug": "our-year-end-review",
+  "publishDate": "2025-12-24",
+  "duration": "1:04:00",
+  "guest": {
+    "name": "No Guest",
+    "title": "Hosts Only"
+  },
+  "description": "The hosts reflect on the rapid advancements in AI technology over the past year, covering implications for business, human interaction, AI alignment, agent roles, and local AI solutions.",
+  "keyTakeaways": [
+    "2025 saw unprecedented advancements in AI capabilities.",
+    "AI alignment remains a critical concern as models become more powerful.",
+    "Agents are becoming increasingly important in AI workflows.",
+    "Local AI solutions offer privacy and control benefits.",
+    "The intersection of AI and business continues to evolve rapidly."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Looking back at the year in AI" },
+    { "time": "15:00", "topic": "Key AI advancements of the year" },
+    { "time": "30:00", "topic": "Business implications and adoption" },
+    { "time": "45:00", "topic": "AI alignment and safety considerations" },
+    { "time": "55:00", "topic": "Local AI and agent developments" }
+  ],
+  "links": [],
+  "spotifyUrl": "https://open.spotify.com/episode/02bZPUaZFbDktaQiTOHcSQ",
+  "youtubeUrl": "https://www.youtube.com/watch?v=86Iracx-Fs4",
+  "tags": ["Year Review", "AI Advancements", "AI Alignment", "Agents", "Local AI"],
+  "thumbnail": "/episodes/ep3-thumb.png"
+}

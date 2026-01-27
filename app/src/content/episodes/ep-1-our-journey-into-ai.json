@@ -1,0 +1,36 @@
+{
+  "id": "ep-1-our-journey-into-ai",
+  "episodeNumber": 1,
+  "title": "Our Journey Into The World Of AI",
+  "slug": "our-journey-into-the-world-of-ai",
+  "publishDate": "2025-08-31",
+  "duration": "1:08:00",
+  "guest": {
+    "name": "No Guest",
+    "title": "Hosts Only"
+  },
+  "description": "Sidd and Avyay share their experiences with Databricks, the development of a matching algorithm, highlighting data importance, project evolution, and tools like Langchain and Ollama. This inaugural episode sets the stage for The Moving Target podcast.",
+  "keyTakeaways": [
+    "The importance of data quality in AI projects cannot be overstated.",
+    "Matching algorithms require iterative development and refinement.",
+    "Tools like Langchain and Ollama are becoming essential in the AI toolkit.",
+    "Real-world AI projects evolve significantly from initial concepts.",
+    "Databricks provides powerful infrastructure for AI development."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Introduction and welcome" },
+    { "time": "10:00", "topic": "Our backgrounds and how we got into AI" },
+    { "time": "25:00", "topic": "Working with Databricks" },
+    { "time": "40:00", "topic": "Developing the matching algorithm" },
+    { "time": "55:00", "topic": "Tools we use: Langchain and Ollama" }
+  ],
+  "links": [
+    { "title": "Databricks", "url": "https://databricks.com" },
+    { "title": "Langchain", "url": "https://langchain.com" },
+    { "title": "Ollama", "url": "https://ollama.ai" }
+  ],
+  "spotifyUrl": "https://open.spotify.com/episode/6ZhArJEGopXTIBRrJ0nZAf",
+  "youtubeUrl": "https://www.youtube.com/watch?v=XTQuUC1W3ng",
+  "tags": ["AI Journey", "Databricks", "Langchain", "Ollama", "Matching Algorithms"],
+  "thumbnail": "/episodes/ep1-thumb.png"
+}

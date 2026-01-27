@@ -1,0 +1,34 @@
+{
+  "id": "ep-2-qwen-evaluating-llms",
+  "episodeNumber": 2,
+  "title": "Qwen, Evaluating LLMs and Our Next Steps",
+  "slug": "qwen-evaluating-llms-and-our-next-steps",
+  "publishDate": "2025-10-26",
+  "duration": "59:00",
+  "guest": {
+    "name": "No Guest",
+    "title": "Hosts Only"
+  },
+  "description": "This episode features personal updates, including Avyay's move to London for a master's in data science, along with discussions on context, memory in AI models, evaluation challenges, and human oversight in development.",
+  "keyTakeaways": [
+    "Qwen models represent significant advances in open-source LLMs.",
+    "Evaluating LLMs remains a challenging and evolving field.",
+    "Context and memory management are crucial for practical AI applications.",
+    "Human oversight remains essential in AI development workflows.",
+    "Continuous learning and adaptation are key in the fast-moving AI space."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Personal updates and Avyay's move to London" },
+    { "time": "15:00", "topic": "Introduction to Qwen models" },
+    { "time": "30:00", "topic": "Challenges in evaluating LLMs" },
+    { "time": "45:00", "topic": "Context and memory in AI models" },
+    { "time": "55:00", "topic": "Our next steps and plans" }
+  ],
+  "links": [
+    { "title": "Qwen", "url": "https://github.com/QwenLM/Qwen" }
+  ],
+  "spotifyUrl": "https://open.spotify.com/episode/6zjIxSwaOvepyUkoVwLLXo",
+  "youtubeUrl": "https://www.youtube.com/watch?v=NUZ72VrjBHc",
+  "tags": ["Qwen", "LLM Evaluation", "Context", "Memory", "AI Development"],
+  "thumbnail": "/episodes/ep2-thumb.png"
+}

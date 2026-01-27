@@ -1,0 +1,35 @@
+{
+  "id": "ep-4-claude-context-agents",
+  "episodeNumber": 4,
+  "title": "Claude, Context and Useful Agents",
+  "slug": "claude-context-and-useful-agents",
+  "publishDate": "2026-01-26",
+  "duration": "1:06:00",
+  "guest": {
+    "name": "No Guest",
+    "title": "Hosts Only"
+  },
+  "description": "Discussion of rapid advancements in AI, particularly focusing on Opus 4.5 and Claude Code. Topics include context management in AI agents, the importance of experimentation, and open-source development's role in advancing AI.",
+  "keyTakeaways": [
+    "Opus 4.5 represents a significant leap in AI capabilities.",
+    "Claude Code is transforming how developers interact with AI.",
+    "Context management is crucial for building useful AI agents.",
+    "Experimentation is key to discovering effective AI applications.",
+    "Open-source development continues to play a vital role in AI progress."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Introduction and recent AI developments" },
+    { "time": "15:00", "topic": "Deep dive into Opus 4.5" },
+    { "time": "30:00", "topic": "Claude Code and developer workflows" },
+    { "time": "45:00", "topic": "Context management in AI agents" },
+    { "time": "55:00", "topic": "The role of experimentation and open-source" }
+  ],
+  "links": [
+    { "title": "Claude", "url": "https://claude.ai" },
+    { "title": "Anthropic", "url": "https://anthropic.com" }
+  ],
+  "spotifyUrl": "https://open.spotify.com/episode/5KSMZKridxCetksdhq8iD8",
+  "youtubeUrl": "https://www.youtube.com/watch?v=zbMdnmlNrxo",
+  "tags": ["Claude", "Opus 4.5", "Claude Code", "AI Agents", "Context Management", "Open Source"],
+  "thumbnail": "/episodes/ep4-thumb.png"
+}
