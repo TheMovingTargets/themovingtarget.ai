@@ -1,0 +1,39 @@
+{
+  "id": "ep-6-ai-in-hospitality",
+  "episodeNumber": 6,
+  "title": "AI in Hospitality: A State of the Union",
+  "slug": "ai-in-hospitality",
+  "publishDate": "2025-01-15",
+  "duration": "49:00",
+  "guest": {
+    "name": "Lisa Wong",
+    "title": "VP of Innovation",
+    "company": "ResortChain Global",
+    "links": {
+      "linkedin": "https://linkedin.com/in/lisawong",
+      "website": "https://resortchain.com"
+    }
+  },
+  "description": "Lisa Wong shares her perspective on AI adoption in hospitality—where the industry is, where it's headed, and what operators should focus on in 2025.",
+  "keyTakeaways": [
+    "Hospitality is behind other industries in AI adoption.",
+    "The best use cases focus on staff augmentation, not replacement.",
+    "Guest expectations are rising—personalization is table stakes.",
+    "Data silos are the biggest technical barrier.",
+    "2025 will be the year of operational AI, not guest-facing AI."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Introduction to Lisa" },
+    { "time": "05:00", "topic": "Current state of AI in hospitality" },
+    { "time": "16:00", "topic": "Successful use cases" },
+    { "time": "28:00", "topic": "Barriers to adoption" },
+    { "time": "40:00", "topic": "Predictions for 2025" }
+  ],
+  "links": [
+    { "title": "ResortChain Global", "url": "https://resortchain.com" }
+  ],
+  "spotifyUrl": "https://open.spotify.com/show/2CM9ppsHkP6pzU2FII66HA",
+  "youtubeUrl": "https://www.youtube.com/@TheMovingTarget",
+  "tags": ["Hospitality", "Industry Analysis", "Trends"],
+  "thumbnail": "/episodes/ep6-thumb.png"
+}

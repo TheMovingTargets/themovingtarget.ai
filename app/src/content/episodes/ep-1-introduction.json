@@ -1,0 +1,32 @@
+{
+  "id": "ep-1-introduction",
+  "episodeNumber": 1,
+  "title": "Introduction: Why We're Starting This",
+  "slug": "introduction-why-were-starting-this",
+  "publishDate": "2024-08-15",
+  "duration": "32:00",
+  "guest": {
+    "name": "No Guest",
+    "title": "Hosts Only"
+  },
+  "description": "Sidd and Avyay introduce The Moving Target—why we're starting this podcast, what we plan to cover, and what listeners can expect.",
+  "keyTakeaways": [
+    "The gap between AI hype and operational reality is massive.",
+    "We need more honest conversations about what actually works.",
+    "The target moves fast—staying oriented is the challenge.",
+    "We'll cover both the podcast conversations and our own builds.",
+    "Listener questions and guest suggestions are always welcome."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Introduction" },
+    { "time": "03:00", "topic": "Why this podcast now?" },
+    { "time": "10:30", "topic": "What we plan to cover" },
+    { "time": "20:00", "topic": "Our backgrounds and perspectives" },
+    { "time": "28:00", "topic": "How to engage with us" }
+  ],
+  "links": [],
+  "spotifyUrl": "https://open.spotify.com/show/2CM9ppsHkP6pzU2FII66HA",
+  "youtubeUrl": "https://www.youtube.com/@TheMovingTarget",
+  "tags": ["Introduction", "AI", "Automation"],
+  "thumbnail": "/episodes/ep1-thumb.png"
+}

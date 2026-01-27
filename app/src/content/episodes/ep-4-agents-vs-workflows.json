@@ -1,0 +1,32 @@
+{
+  "id": "ep-4-agents-vs-workflows",
+  "episodeNumber": 4,
+  "title": "Agents vs Workflows: When to Use What",
+  "slug": "agents-vs-workflows",
+  "publishDate": "2024-11-15",
+  "duration": "41:00",
+  "guest": {
+    "name": "No Guest",
+    "title": "Hosts Only"
+  },
+  "description": "Sidd and Avyay discuss the difference between agentic systems and traditional workflows—when each makes sense and how to decide what to build.",
+  "keyTakeaways": [
+    "Workflows are deterministic; agents are adaptive.",
+    "Most 'agents' are actually just complex workflows.",
+    "Start with workflows, add agentic behavior where needed.",
+    "True agents require clear goals, tools, and feedback loops.",
+    "Cost and latency are real constraints for agentic systems."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Introduction" },
+    { "time": "05:00", "topic": "Defining agents and workflows" },
+    { "time": "18:00", "topic": "Decision framework" },
+    { "time": "30:00", "topic": "Real-world examples" },
+    { "time": "38:00", "topic": "Closing thoughts" }
+  ],
+  "links": [],
+  "spotifyUrl": "https://open.spotify.com/show/2CM9ppsHkP6pzU2FII66HA",
+  "youtubeUrl": "https://www.youtube.com/@TheMovingTarget",
+  "tags": ["Agents", "Workflows", "Architecture"],
+  "thumbnail": "/episodes/ep4-thumb.png"
+}

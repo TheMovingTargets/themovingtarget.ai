@@ -1,0 +1,39 @@
+{
+  "id": "ep-2-understanding-llms",
+  "episodeNumber": 2,
+  "title": "Understanding LLMs: A Primer for Operators",
+  "slug": "understanding-llms-primer",
+  "publishDate": "2024-09-15",
+  "duration": "48:00",
+  "guest": {
+    "name": "Dr. Priya Sharma",
+    "title": "AI Research Lead",
+    "company": "Tech Labs",
+    "links": {
+      "linkedin": "https://linkedin.com/in/priyasharma",
+      "website": "https://priyasharma.com"
+    }
+  },
+  "description": "Dr. Priya Sharma breaks down large language models for non-technical operators—how they work, what they can and can't do, and how to think about using them.",
+  "keyTakeaways": [
+    "LLMs are prediction engines, not knowledge bases.",
+    "Context window limitations are real and matter for applications.",
+    "Prompt engineering is about clarity, not trickery.",
+    "Hallucinations are a feature of how LLMs work, not a bug to fix.",
+    "Start with problems, not technology."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Introduction to Priya" },
+    { "time": "05:00", "topic": "What LLMs actually do" },
+    { "time": "15:00", "topic": "Capabilities and limitations" },
+    { "time": "28:00", "topic": "Practical applications" },
+    { "time": "40:00", "topic": "Common misconceptions" }
+  ],
+  "links": [
+    { "title": "Priya's Blog", "url": "https://priyasharma.com" }
+  ],
+  "spotifyUrl": "https://open.spotify.com/show/2CM9ppsHkP6pzU2FII66HA",
+  "youtubeUrl": "https://www.youtube.com/@TheMovingTarget",
+  "tags": ["LLMs", "Fundamentals", "Operations"],
+  "thumbnail": "/episodes/ep2-thumb.png"
+}

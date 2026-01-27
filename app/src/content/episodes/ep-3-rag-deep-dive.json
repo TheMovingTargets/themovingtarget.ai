@@ -1,0 +1,39 @@
+{
+  "id": "ep-3-rag-deep-dive",
+  "episodeNumber": 3,
+  "title": "RAG Deep Dive: Retrieval That Actually Works",
+  "slug": "rag-deep-dive",
+  "publishDate": "2024-10-15",
+  "duration": "52:00",
+  "guest": {
+    "name": "Marcus Johnson",
+    "title": "Founder",
+    "company": "VectorDB Inc",
+    "links": {
+      "linkedin": "https://linkedin.com/in/marcusjohnson",
+      "website": "https://vectordb.com"
+    }
+  },
+  "description": "Marcus Johnson from VectorDB Inc joins us for a deep dive into retrieval-augmented generation—common patterns, failure modes, and production best practices.",
+  "keyTakeaways": [
+    "Chunking strategy matters more than embedding model choice.",
+    "Hybrid search (keyword + semantic) outperforms either alone.",
+    "Re-ranking significantly improves result quality.",
+    "Evaluation is hard but essential—build feedback loops early.",
+    "Most RAG failures are data quality issues, not retrieval issues."
+  ],
+  "showNotes": [
+    { "time": "00:00", "topic": "Introduction to Marcus" },
+    { "time": "04:00", "topic": "RAG architecture overview" },
+    { "time": "14:00", "topic": "Chunking strategies" },
+    { "time": "26:00", "topic": "Embedding and retrieval" },
+    { "time": "38:00", "topic": "Evaluation and iteration" }
+  ],
+  "links": [
+    { "title": "VectorDB Inc", "url": "https://vectordb.com" }
+  ],
+  "spotifyUrl": "https://open.spotify.com/show/2CM9ppsHkP6pzU2FII66HA",
+  "youtubeUrl": "https://www.youtube.com/@TheMovingTarget",
+  "tags": ["RAG", "Vector DB", "Retrieval"],
+  "thumbnail": "/episodes/ep3-thumb.png"
+}
