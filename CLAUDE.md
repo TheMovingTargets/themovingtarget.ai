@@ -29,8 +29,8 @@ npm run lint      # ESLint on TypeScript/TSX files
 │   └── forms/        # Contact/inquiry forms
 ├── pages/            # Route pages (10 pages)
 ├── content/
-│   ├── episodes/     # Episode JSON files (ep-1 through ep-6)
-│   └── projects/     # Project JSON files
+│   ├── episodes/     # Episode JSON files (ep-1 through ep-4)
+│   └── projects/     # Project JSON files (legacy)
 ├── lib/
 │   ├── data.ts       # Content loading via Vite glob imports
 │   └── utils.ts
@@ -53,7 +53,7 @@ Content is stored as JSON files in `src/content/`. The `lib/data.ts` module uses
 - `/` - Home with hero, latest episode, MARIA feature
 - `/episodes` and `/episodes/:slug` - Episode listing and detail
 - `/agents` - MARIA AI agent showcase
-- `/projects` and `/projects/:slug` - Resource repository
+- `/catchup` - Episode comics and shorts
 - `/inquiries` - Guest, partner, demo request forms
 
 ### Tech Stack
@@ -71,6 +71,25 @@ VITE_FORMSPREE_PARTNER_FORM_ID
 VITE_FORMSPREE_DEMO_FORM_ID
 VITE_PLAUSIBLE_DOMAIN
 ```
+
+## Deployment
+
+**Live site:** https://www.themovingtarget.ai
+
+**Deploy with a single command** from the repo root:
+```bash
+./deploy.sh
+```
+
+This builds the site, uploads to S3, and invalidates CloudFront cache.
+
+### AWS Resources
+| Resource | Value |
+|----------|-------|
+| S3 Bucket | `themovingtarget.ai` |
+| CloudFront Distribution ID | `E33AT72S60BCCL` |
+| CloudFront Domain | `d25ekfv38wxvo.cloudfront.net` |
+| ACM Certificate | `arn:aws:acm:us-east-1:086090975684:certificate/36a2491e-2309-4300-8fbd-aabf909e7215` |
 
 ## Strategy Documentation
 
