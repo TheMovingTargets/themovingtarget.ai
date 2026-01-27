@@ -4,8 +4,7 @@ import { Home } from '@/pages/Home';
 import { Episodes } from '@/pages/Episodes';
 import { EpisodeDetail } from '@/pages/EpisodeDetail';
 import { Agents } from '@/pages/Agents';
-import { Projects } from '@/pages/Projects';
-import { ProjectDetail } from '@/pages/ProjectDetail';
+import { CatchUp } from '@/pages/CatchUp';
 import { About } from '@/pages/About';
 import { Inquiries } from '@/pages/Inquiries';
 import { InquiriesSuccess } from '@/pages/InquiriesSuccess';
@@ -33,12 +32,16 @@ export const router = createBrowserRouter([
         element: <Agents />,
       },
       {
+        path: 'catchup',
+        element: <CatchUp />,
+      },
+      {
         path: 'projects',
-        element: <Projects />,
+        element: <Navigate to="/catchup" replace />,
       },
       {
         path: 'projects/:slug',
-        element: <ProjectDetail />,
+        element: <Navigate to="/catchup" replace />,
       },
       {
         path: 'about',
