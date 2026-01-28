@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Send } from 'lucide-react';
+import { Send, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -16,6 +16,7 @@ import {
 export function DemoForm() {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,37 +27,43 @@ export function DemoForm() {
     timeline: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Build mailto URL with structured email content
-    const subject = `Demo Request: ${formData.company}`;
-    const body = `MARIA DEMO REQUEST
+    const formId = import.meta.env.VITE_FORMSPREE_DEMO_FORM_ID;
 
-CONTACT INFORMATION
-Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company}
-Role: ${formData.role}
+    try {
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          role: formData.role,
+          teamSize: formData.teamSize || 'Not specified',
+          problem: formData.problem,
+          timeline: formData.timeline || 'Not specified',
+          _subject: `Demo Request: ${formData.company}`,
+        }),
+      });
 
-TEAM DETAILS
-Team Size: ${formData.teamSize || 'Not specified'}
-Timeline: ${formData.timeline || 'Not specified'}
-
-PROBLEM TO SOLVE
-${formData.problem}
-`;
-
-    const mailtoUrl = `mailto:themovingtargetpodcast@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Open mail client
-    window.location.href = mailtoUrl;
-
-    // Navigate to success page after a short delay
-    setTimeout(() => {
-      navigate('/inquiries/success?type=demo');
-    }, 500);
+      if (response.ok) {
+        navigate('/inquiries/success?type=demo');
+      } else {
+        const data = await response.json();
+        setError(data.error || 'Something went wrong. Please try again.');
+        setIsSubmitting(false);
+      }
+    } catch {
+      setError('Network error. Please check your connection and try again.');
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -70,6 +77,13 @@ ${formData.problem}
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {error && (
+        <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20 flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-destructive">{error}</p>
+        </div>
+      )}
+
       <div className="grid sm:grid-cols-2 gap-6">
         <div className="space-y-2">
           <Label htmlFor="name">Name *</Label>

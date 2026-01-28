@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from 'react-router-dom';
-import { Check, ArrowRight, Mail, Clock, Podcast } from 'lucide-react';
+import { Check, ArrowRight, Clock, Podcast } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const successMessages: Record<string, { title: string; message: string; nextSteps: string[] }> = {
@@ -70,16 +70,6 @@ export function InquiriesSuccess() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Additional Info */}
-          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mb-10">
-            <Mail className="w-4 h-4" />
-            <span>
-              Check your inbox for a confirmation email. Add{' '}
-              <span className="text-foreground">themovingtargetpodcast@gmail.com</span>{' '}
-              to your contacts.
-            </span>
           </div>
 
           {/* CTAs */}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Send } from 'lucide-react';
+import { Send, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 export function GuestForm() {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,37 +19,42 @@ export function GuestForm() {
     links: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Build mailto URL with structured email content
-    const subject = `Guest Suggestion: ${formData.guestName}`;
-    const body = `GUEST SUGGESTION FOR THE MOVING TARGET PODCAST
+    const formId = import.meta.env.VITE_FORMSPREE_GUEST_FORM_ID;
 
-Submitted by: ${formData.name}
-Email: ${formData.email}
+    try {
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          submitterName: formData.name,
+          submitterEmail: formData.email,
+          guestName: formData.guestName,
+          guestRole: formData.guestRole,
+          reason: formData.reason,
+          links: formData.links || 'Not provided',
+          _subject: `Guest Suggestion: ${formData.guestName}`,
+        }),
+      });
 
-SUGGESTED GUEST
-Name: ${formData.guestName}
-Role/Title: ${formData.guestRole}
-
-WHY THEY'D BE GREAT
-${formData.reason}
-
-LINKS
-${formData.links || 'Not provided'}
-`;
-
-    const mailtoUrl = `mailto:themovingtargetpodcast@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Open mail client
-    window.location.href = mailtoUrl;
-
-    // Navigate to success page after a short delay
-    setTimeout(() => {
-      navigate('/inquiries/success?type=guest');
-    }, 500);
+      if (response.ok) {
+        navigate('/inquiries/success?type=guest');
+      } else {
+        const data = await response.json();
+        setError(data.error || 'Something went wrong. Please try again.');
+        setIsSubmitting(false);
+      }
+    } catch {
+      setError('Network error. Please check your connection and try again.');
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -62,6 +68,13 @@ ${formData.links || 'Not provided'}
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {error && (
+        <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20 flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-destructive">{error}</p>
+        </div>
+      )}
+
       <div className="grid sm:grid-cols-2 gap-6">
         <div className="space-y-2">
           <Label htmlFor="name">Your Name *</Label>
