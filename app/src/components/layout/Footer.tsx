@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
-import { Headphones, Youtube, Linkedin, Twitter } from 'lucide-react';
+import { Headphones, Youtube, Linkedin } from 'lucide-react';
+
+const APP_VERSION = '0.2.1';
 
 const footerLinks = {
   main: [
     { label: 'Episodes', href: '/episodes' },
     { label: 'Agents', href: '/agents' },
-    { label: 'Projects', href: '/projects' },
+    { label: 'CatchUp', href: '/catchup' },
     { label: 'About', href: '/about' },
     { label: 'Inquiries', href: '/inquiries' },
   ],
@@ -17,8 +19,7 @@ const footerLinks = {
 const socialLinks = [
   { label: 'Spotify', href: 'https://open.spotify.com/show/2CM9ppsHkP6pzU2FII66HA', icon: Headphones },
   { label: 'YouTube', href: 'https://www.youtube.com/@TheMovingTarget', icon: Youtube },
-  { label: 'LinkedIn', href: 'https://linkedin.com/company/themovingtarget', icon: Linkedin },
-  { label: 'X', href: 'https://x.com/themovingtarget', icon: Twitter },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/111419075', icon: Linkedin },
 ];
 
 export function Footer() {
@@ -97,6 +98,9 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} The Moving Target. Built with intention.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            v{APP_VERSION}
           </p>
           <p className="text-sm text-muted-foreground">
             Hosted by{' '}
