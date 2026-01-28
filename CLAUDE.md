@@ -90,6 +90,19 @@ This builds the site, uploads to S3, and invalidates CloudFront cache.
 | CloudFront Distribution ID | `E33AT72S60BCCL` |
 | CloudFront Domain | `d25ekfv38wxvo.cloudfront.net` |
 | ACM Certificate | `arn:aws:acm:us-east-1:086090975684:certificate/36a2491e-2309-4300-8fbd-aabf909e7215` |
+| Route 53 Hosted Zone ID | `Z001505230RWGJLLB0B3E` |
+
+### DNS Configuration (Route 53)
+| Record | Type | Value |
+|--------|------|-------|
+| `themovingtarget.ai` | A (Alias) | `d25ekfv38wxvo.cloudfront.net` |
+| `www.themovingtarget.ai` | CNAME | `d25ekfv38wxvo.cloudfront.net` |
+
+**Nameservers:**
+- `ns-1434.awsdns-51.org`
+- `ns-391.awsdns-48.com`
+- `ns-516.awsdns-00.net`
+- `ns-1786.awsdns-31.co.uk`
 
 ## Strategy Documentation
 
