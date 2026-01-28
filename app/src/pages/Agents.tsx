@@ -16,7 +16,7 @@ const howItWorks = [
   {
     step: '3',
     title: 'Coordinate',
-    description: 'MARIA manages the flow—training, updates, handoffs, and follow-ups.',
+    description: 'MARIA manages the flow: training, updates, handoffs, and follow-ups.',
   },
 ];
 

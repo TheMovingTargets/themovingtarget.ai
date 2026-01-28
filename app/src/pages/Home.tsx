@@ -177,7 +177,7 @@ export function Home() {
               <h2 className="text-h2 mb-4">Meet MARIA</h2>
               <p className="text-body text-muted-foreground mb-6">
                 An agent that coordinates teams, training, and operations. 
-                MARIA handles the flow—onboarding, updates, handoffs—so 
+                MARIA handles the flow (onboarding, updates, handoffs) so
                 nothing falls through the cracks.
               </p>
               <p className="text-body text-muted-foreground mb-8">

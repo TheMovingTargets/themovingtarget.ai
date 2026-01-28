@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const shortBlurb = `The Moving Target is a monthly podcast where hosts Sidd Gupta and Avyay Misra explore the practical reality of AI, automation, and agentic systems.`;
 
-const longBlurb = `The Moving Target is a monthly podcast where hosts Sidd Gupta and Avyay Misra explore the practical reality of AI, automation, and agentic systems. No hype, just honest conversations about what's working and what isn't. Beyond the podcast, they build MARIA—an agent that coordinates teams, training, and operations for hospitality and service-heavy businesses.`;
+const longBlurb = `The Moving Target is a monthly podcast where hosts Sidd Gupta and Avyay Misra explore the practical reality of AI, automation, and agentic systems. No hype, just honest conversations about what's working and what isn't. Beyond the podcast, they build MARIA, an agent that coordinates teams, training, and operations for hospitality and service-heavy businesses.`;
 
 const quickFacts = [
   'Monthly podcast on AI, agents, and automation',

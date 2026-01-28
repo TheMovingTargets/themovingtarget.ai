@@ -63,14 +63,14 @@ export function About() {
               We wanted to change that.
             </p>
             <p>
-              Sidd and Avyay started recording monthly conversations about what 
-              they're seeing in the field—what's working, what's overhyped, and 
-              what operators actually need to know. No script, no agenda, just 
+              Sidd and Avyay started recording monthly conversations about what
+              they're seeing in the field: what's working, what's overhyped, and
+              what operators actually need to know. No script, no agenda, just
               two builders talking shop.
             </p>
             <p>
-              The podcast grew. So did the work. Today, The Moving Target is both 
-              a show and a studio—where we record honest conversations and build 
+              The podcast grew. So did the work. Today, The Moving Target is both
+              a show and a studio, where we record honest conversations and build
               practical tools like MARIA.
             </p>
             <p className="text-foreground font-medium">
@@ -147,8 +147,8 @@ export function About() {
         <div className="p-8 md:p-12 rounded-2xl bg-card border border-border text-center">
           <h2 className="text-h3 mb-4">Want to connect?</h2>
           <p className="text-body text-muted-foreground mb-8 max-w-lg mx-auto">
-            Whether you want to suggest a guest, explore a partnership, or just 
-            say hello—we'd love to hear from you.
+            Whether you want to suggest a guest, explore a partnership, or just
+            say hello, we'd love to hear from you.
           </p>
           <Button
             asChild
