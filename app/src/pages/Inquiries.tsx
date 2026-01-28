@@ -86,10 +86,10 @@ export function Inquiries() {
           <p className="text-sm text-muted-foreground">
             Prefer email? Reach us at{' '}
             <a
-              href="mailto:hello@themovingtarget.com"
+              href="mailto:themovingtargetpodcast@gmail.com"
               className="text-primary hover:underline"
             >
-              hello@themovingtarget.com
+              themovingtargetpodcast@gmail.com
             </a>
           </p>
         </div>

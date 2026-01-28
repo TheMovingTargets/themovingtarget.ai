@@ -18,14 +18,37 @@ export function GuestForm() {
     links: '',
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (replace with actual Formspree integration)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    navigate('/inquiries/success?type=guest');
+    // Build mailto URL with structured email content
+    const subject = `Guest Suggestion: ${formData.guestName}`;
+    const body = `GUEST SUGGESTION FOR THE MOVING TARGET PODCAST
+
+Submitted by: ${formData.name}
+Email: ${formData.email}
+
+SUGGESTED GUEST
+Name: ${formData.guestName}
+Role/Title: ${formData.guestRole}
+
+WHY THEY'D BE GREAT
+${formData.reason}
+
+LINKS
+${formData.links || 'Not provided'}
+`;
+
+    const mailtoUrl = `mailto:themovingtargetpodcast@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open mail client
+    window.location.href = mailtoUrl;
+
+    // Navigate to success page after a short delay
+    setTimeout(() => {
+      navigate('/inquiries/success?type=guest');
+    }, 500);
   };
 
   const handleChange = (

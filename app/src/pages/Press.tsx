@@ -226,10 +226,10 @@ export function Press() {
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="mailto:hello@themovingtarget.com"
+              href="mailto:themovingtargetpodcast@gmail.com"
               className="text-primary hover:underline"
             >
-              hello@themovingtarget.com
+              themovingtargetpodcast@gmail.com
             </a>
             <span className="text-muted-foreground">|</span>
             <Link

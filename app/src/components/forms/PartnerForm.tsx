@@ -25,13 +25,36 @@ export function PartnerForm() {
     goals: '',
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    navigate('/inquiries/success?type=partner');
+    // Build mailto URL with structured email content
+    const subject = `Partnership Inquiry: ${formData.company}`;
+    const body = `PARTNERSHIP INQUIRY FOR THE MOVING TARGET PODCAST
+
+CONTACT INFORMATION
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company}
+Role: ${formData.role}
+
+PARTNERSHIP DETAILS
+Type: ${formData.partnershipType || 'Not specified'}
+
+GOALS
+${formData.goals}
+`;
+
+    const mailtoUrl = `mailto:themovingtargetpodcast@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open mail client
+    window.location.href = mailtoUrl;
+
+    // Navigate to success page after a short delay
+    setTimeout(() => {
+      navigate('/inquiries/success?type=partner');
+    }, 500);
   };
 
   const handleChange = (

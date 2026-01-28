@@ -26,13 +26,37 @@ export function DemoForm() {
     timeline: '',
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    navigate('/inquiries/success?type=demo');
+    // Build mailto URL with structured email content
+    const subject = `Demo Request: ${formData.company}`;
+    const body = `MARIA DEMO REQUEST
+
+CONTACT INFORMATION
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company}
+Role: ${formData.role}
+
+TEAM DETAILS
+Team Size: ${formData.teamSize || 'Not specified'}
+Timeline: ${formData.timeline || 'Not specified'}
+
+PROBLEM TO SOLVE
+${formData.problem}
+`;
+
+    const mailtoUrl = `mailto:themovingtargetpodcast@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open mail client
+    window.location.href = mailtoUrl;
+
+    // Navigate to success page after a short delay
+    setTimeout(() => {
+      navigate('/inquiries/success?type=demo');
+    }, 500);
   };
 
   const handleChange = (

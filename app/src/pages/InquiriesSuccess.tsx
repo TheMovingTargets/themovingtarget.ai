@@ -77,7 +77,7 @@ export function InquiriesSuccess() {
             <Mail className="w-4 h-4" />
             <span>
               Check your inbox for a confirmation email. Add{' '}
-              <span className="text-foreground">hello@themovingtarget.com</span>{' '}
+              <span className="text-foreground">themovingtargetpodcast@gmail.com</span>{' '}
               to your contacts.
             </span>
           </div>
