@@ -1,24 +1,22 @@
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, ArrowRight, Target, Heart, Wrench, Users } from 'lucide-react';
+import { Linkedin, ArrowRight, Target, Heart, Wrench, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const hosts = [
   {
     name: 'Sidd Gupta',
-    role: 'Co-Host & Builder',
+    role: 'Co-Founder',
     bio: 'Sidd brings deep technical expertise in AI systems and agent architectures. With years of experience building production-grade automation, he focuses on the practical reality of deploying LLMs and agentic workflows. He leads the technical development of MARIA.',
     links: {
-      linkedin: 'https://linkedin.com/in/siddgupta',
-      twitter: 'https://x.com/siddgupta',
+      linkedin: 'https://www.linkedin.com/in/delhiryder/',
     },
   },
   {
     name: 'Avyay Misra',
-    role: 'Co-Host & Operator',
+    role: 'Co-Founder',
     bio: 'Avyay brings operational expertise from the hospitality and service industries. He understands the challenges of running teams and coordinating complex operations. His focus is on building AI that actually helps people on the ground do their jobs better.',
     links: {
-      linkedin: 'https://linkedin.com/in/avyaymisra',
-      twitter: 'https://x.com/avyaymisra',
+      linkedin: 'https://www.linkedin.com/in/avyay-misra-848a08166/',
     },
   },
 ];
@@ -108,15 +106,6 @@ export function About() {
                     aria-label={`${host.name} LinkedIn`}
                   >
                     <Linkedin className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={host.links.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-lg bg-secondary text-muted-foreground hover:text-foreground transition-colors"
-                    aria-label={`${host.name} X`}
-                  >
-                    <Twitter className="w-4 h-4" />
                   </a>
                 </div>
               </div>

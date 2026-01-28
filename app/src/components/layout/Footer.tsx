@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Headphones, Youtube, Linkedin } from 'lucide-react';
 
-const APP_VERSION = '0.2.1';
+const APP_VERSION = '0.2.2';
 
 const footerLinks = {
   main: [

@@ -55,9 +55,6 @@ function ComicCard({ comic }: { comic: ComicItem }) {
           alt={comic.title}
           className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
         />
-        <div className="absolute top-3 left-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-          Episode {comic.episodeNumber}
-        </div>
       </div>
       <CardHeader className="pb-4">
         <CardTitle className="text-lg">{comic.title}</CardTitle>
