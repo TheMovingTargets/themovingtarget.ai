@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Headphones, Youtube, Linkedin } from 'lucide-react';
 
-const APP_VERSION = '0.2.2';
+const APP_VERSION = '0.2.3';
 
 const footerLinks = {
   main: [
@@ -10,9 +10,6 @@ const footerLinks = {
     { label: 'CatchUp', href: '/catchup' },
     { label: 'About', href: '/about' },
     { label: 'Inquiries', href: '/inquiries' },
-  ],
-  secondary: [
-    { label: 'Press Kit', href: '/press' },
   ],
 };
 
@@ -26,7 +23,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border">
       <div className="container-custom py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="inline-block">
@@ -74,24 +71,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Secondary Links */}
-          <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">
-              Resources
-            </h3>
-            <ul className="space-y-3">
-              {footerLinks.secondary.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Bottom Bar */}
